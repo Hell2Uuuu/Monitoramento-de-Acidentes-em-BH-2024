@@ -1,6 +1,6 @@
 # 🚦 Monitoramento de Acidentes de Trânsito em BH (2024)
 
-![Dashboard Preview](images/dashboard_print.png)
+![Dashboard Preview](images/DashBoard.png)
 > *Visão geral do Dashboard interativo construído no Power BI.*
 
 ## 📋 Sobre o Projeto
