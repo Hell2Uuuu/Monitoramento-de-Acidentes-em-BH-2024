@@ -5,8 +5,6 @@ import numpy as np
 def executar_etl_acidentes(input_file, output_file):
     print(f"Iniciando ETL no arquivo: {input_file}")
     
-    # CORREÇÃO 1: O separador correto é ponto e vírgula (;)
-    # O encoding 'latin-1' costuma funcionar melhor para arquivos do governo brasileiro
     try:
         df = pd.read_csv(input_file, sep=';', encoding='utf-8', on_bad_lines='skip')
     except:
@@ -71,6 +69,5 @@ def executar_etl_acidentes(input_file, output_file):
     df_final.to_csv(output_file, index=False, encoding='utf-8-sig')
     print(f"Arquivo salvo com sucesso: {output_file}")
 
-# CORREÇÃO 2: A chamada da função NÃO pode ter # na frente
-# Certifique-se que o nome do arquivo de entrada é exatamente o que você baixou
+
 executar_etl_acidentes('si-bol-2024.csv', 'acidentes_bh_limpo_v2.csv')
